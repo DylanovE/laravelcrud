@@ -1,0 +1,442 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    overflow: auto;
+    padding: 15px 0;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+header p {
+    padding-left: 20px;
+    font-size: 4rem;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+nav a {
+    font-size: 15pt;
+    margin-right: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.navA-day {
+    background-color: #e1c45e;
+    color: black;
+    border: 2px solid #b26339;
+    ;
+}
+
+.navA-day:hover {
+    background-color: #ff9900;
+}
+
+main {
+    overflow: auto;
+    height: calc(100% - 129.2px);
+    width: 100%;
+}
+
+.main-night {
+    background: linear-gradient(to bottom, #020111 60%, #20202c 100%);
+}
+
+.main-day {
+    background: linear-gradient(to bottom, #154277 0%, #576e71 30%, #e1c45e 70%, #b26339 100%);
+}
+
+.homeP {
+    margin-top: 6.5%;
+}
+
+.mainP-night {
+    margin-top: 4%;
+    font-size: 60pt;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    color: #119e6f;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.mainP-day {
+    color: #ff9900;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #ff9900, 0 0 82px #ff9900, 0 0 92px #ff9900, 0 0 102px #ff9900, 0 0 151px #ff9900;
+}
+
+.info-day,
+.form-day {
+    border: 4px solid #999dd6;
+    background-color: #b4eaff;
+}
+
+.projects-day .card-parent:nth-child(3n+2) .card {
+    background-color: #b4eaff;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.link {
+    font-size: 15pt;
+    margin-right: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.cv {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.cv a img {
+    width: 100%;
+    max-width: 600px;
+}
+
+form {
+    width: 39%;
+    margin: 16px auto;
+}
+
+.left-form {
+    width: 30%;
+    float: left;
+    padding-right: 1%;
+}
+
+.left-form p {
+    text-align: right;
+    font-size: 12pt;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+}
+
+.right-form {
+    width: 65%;
+    float: right;
+    text-align: left;
+}
+
+.right-form div input {
+    width: 70%;
+    margin: 0 0 10px 0;
+    height: 20px;
+}
+
+form div textarea {
+    width: 70%;
+    height: 133px;
+}
+
+.submit {
+    text-align: center;
+    clear: both;
+}
+
+.submit button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: 900;
+}
+
+.img-parent {
+    float: left;
+    width: 40%;
+}
+
+.pImg {
+    margin-left: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.pInfo {
+    width: 50%;
+    float: right;
+    margin-right: 20px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.pLink-night {
+    float: right;
+    font-size: 15pt;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 7px;
+    background-color: #25254e;
+    color: white;
+    border: 2px solid #20202c;
+}
+
+.pLink-day {
+    background-color: #e1c45e;
+    color: black;
+    border: 2px solid #b26339;
+    ;
+}
+
+.fixer {
+    clear: both;
+    width: 100%;
+    height: 60px;
+}
+
+footer {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+footer p {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-night {
+    color: white;
+    background-color: black;
+}
+
+.footer-day {
+    color: black;
+    background-color: #9b5835;
+}
+
+@media only screen and (max-width: 768px) {
+    header p {
+        float: none;
+        text-align: center;
+    }
+    nav {
+        float: none;
+        margin: 20px auto 10px auto;
+        width: fit-content;
+    }
+    .projects-day .card-parent .card {
+        background-color: #999dd6 !important;
+        padding-bottom: 10px;
+    }
+    .projects-day .card-parent:nth-child(4n+3) .card,
+    .projects-day .card-parent:nth-child(4n+4) .card {
+        background-color: #b4eaff !important;
+    }
+}
+
+@media only screen and (max-width: 519px) {
+    .homeP {
+        font-size: 50pt;
+    }
+    header p {
+        font-size: 30pt;
+    }
+    nav {
+        margin-top: 20px;
+        width: 100%;
+    }
+    nav a {
+        font-size: 15pt;
+        padding: 10px 0;
+        text-decoration: none;
+        border-radius: 0px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    main p {
+        margin-top: 4%;
+        font-size: 50pt;
+    }
+    .info {
+        width: 85%;
+    }
+    .projects-day .card-parent .card,
+    .projects-day .card-parent:nth-child(4n+3) .card,
+    .projects-day .card-parent:nth-child(4n+4) .card {
+        background-color: #999dd6 !important;
+    }
+    .projects-day .card-parent:nth-child(2n+2) .card {
+        background-color: #b4eaff !important;
+    }
+    .img-parent {
+        width: 90%;
+        float: none;
+    }
+    .pImg {
+        margin-left: 5%;
+    }
+    .pInfo {
+        width: 90%;
+        margin-left: 2%;
+        margin-right: 0;
+        float: none;
+    }
+}
+
+
+/*usable*/
+
+* {
+    font-family: monospace!important;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #17171f;
+}
+
+html,
+body,
+.container {
+    height: 100%;
+}
+
+
+/*nav start*/
+
+.nav-option {
+    background-color: #25254e;
+    color: white;
+    border: 2px solid #20202c;
+}
+
+.nav-option:hover {
+    background-color: #20202c;
+}
+
+
+/*nav start*/
+
+
+/*projects page start*/
+
+.projects .card-parent .card,
+.projects .card-parent:nth-child(4n+3) .card,
+.project .card-parent:nth-child(4n+4) .card {
+    background-color: #17171f !important;
+    padding-bottom: 10px;
+    color: white;
+    border-color: #404053;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#projects {
+    width: 60%;
+    margin: auto;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#projects .card-parent .card img {
+    float: left;
+    max-height: 100%;
+    margin: 0.5%;
+}
+
+#projects .card-parent .card {
+    overflow: scroll;
+    height: 30vh;
+}
+
+#projects .card-parent {
+    padding: 1%;
+    width: auto;
+    float: none;
+    position: relative;
+    z-index: 3;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.card img {
+    width: 88px;
+    height: 88px;
+}
+
+
+/*projects page end*/
+
+
+/*welcome page start*/
+
+.info {
+    margin: 10px auto 0 auto;
+    padding: 10px 5px;
+    width: 60%;
+    text-align: center;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    border: 4px solid #20202c;
+    background-color: #2a2a35;
+}
+
+
+/*welcome page end*/
+
+
+/* overall usable css */
+
+.white-txt {
+    color: white;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.margin-left-20 {
+    margin-left: 10%;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.a {
+    color: rgb(100, 100, 255);
+}
